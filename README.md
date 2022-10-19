@@ -1,3 +1,8 @@
+<!--
+ * @Author: xianyu 
+ * @Date: 2022-09-29 16:19:33
+ * @Description: 
+-->
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
@@ -44,3 +49,30 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+### npm run lint 
+
+使用eslint 校验.tsx,.ts,.js后缀的文件
+
+### npm run lint:stylelint 
+
+使用stylelint 校验scss,css,less等样式文件
+
+## npm run prepare 
+
+husky命令
+
+## npm run commit 
+
+自动化的提交commit，已配置了husky的commit-msg检查，
+
+git commit 仍然是普通的 git 提交模式；但使用 yarn commit 会执行交互式 commit 提交，在终端跟着提示一步步输入，就能生成规范的 commit message。
+
+日常的提交先使用 git add .，再使用 npm run commit 代替 git commit，如果使用 git commit 命令提交必须书写符合规范的提交记录。
+
+配置文件 .cz-config.js 文件，用于自定义commit提示信息
+
+如果某次提交想要禁用 husky，可以添加参数 --no-verify
+git commit --no-verify -m "xxx"
+
