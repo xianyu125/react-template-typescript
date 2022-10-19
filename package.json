@@ -1,6 +1,6 @@
 {
-  "name": "react-blog",
-  "version": "0.1.0",
+  "name": "react-template-typescript",
+  "version": "0.0.0",
   "private": true,
   "dependencies": {
     "@craco/craco": "^7.0.0-alpha.8",
