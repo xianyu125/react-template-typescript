@@ -1,4 +1,5 @@
 const { when, whenDev, whenProd, whenTest, ESLINT_MODES, POSTCSS_MODES } = require('@craco/craco')
+const path = require('path')
 
 module.exports = {
   reactScriptsVersion: 'react-scripts' /* (default value) */,
@@ -74,7 +75,12 @@ module.exports = {
   //   enableTypeChecking: true /* (default value)  */,
   // },
   webpack: {
-    alias: {},
+    alias: {
+      // 这里尝试过只能用英文代替，不能用特殊符号，不然eslint会报错
+      app: path.resolve(__dirname, 'src/app'),
+     
+    },
+    // extensions: [".tsx", ".ts", ".jsx", ".js"],
     plugins: {
       add: [] /* An array of plugins */,
       add: [

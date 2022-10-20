@@ -33,8 +33,8 @@
     "commitizen": {
       "path": "node_modules/cz-customizable"
     },
-    "cz-customizable":{
-      "config":"cz-config.js"
+    "cz-customizable": {
+      "config": "cz-config.js"
     }
   },
   "browserslist": {
@@ -60,6 +60,7 @@
     "eslint": "^8.25.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.17",
