@@ -80,3 +80,18 @@ git commit 仍然是普通的 git 提交模式；但使用 yarn commit 会执行
 如果某次提交想要禁用 husky，可以添加参数 --no-verify
 git commit --no-verify -m "xxx"
 
+
+### 集成lint-staged 
+
+```  "lint-staged": {
+    "src/*.{js,jsx,ts,tsx}": [
+      "pnpm run lint"
+    ],
+    "src/*.{scss,css,less}": [
+      "pnpm run lint:stylelint"
+    ]
+   }
+```
+这条命令的意思是，
+对于暂存区中src文件夹下后缀名为ts,tsx,js,jsx的文件执行eslint校验并自动修复可修复的eslint报错,
+对暂存区的scss,css,less文件进行stylelint校验
