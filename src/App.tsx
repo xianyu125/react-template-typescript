@@ -1,8 +1,3 @@
-/*
- * @Author: bo.yu yb@sxw.cn
- * @Date: 2022-09-29 16:19:33
- * @Description:
- */
 import React from 'react';
 import logo from './logo.svg';
 import Counter from './features/counter/Counter';
