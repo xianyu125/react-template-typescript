@@ -45,22 +45,22 @@ module.exports = {
       },
     },
   },
-  // eslint: {
-  //   enable: true /* (default value) */,
-  //   mode: 'extends' /* (default value) */ || 'file',
-  //   configure: {
-  //     /* Any eslint configuration options: https://eslint.org/docs/user-guide/configuring */
-  //   },
-  //   configure: (eslintConfig, { env, paths }) => {
-  //     return eslintConfig
-  //   },
-  //   pluginOptions: {
-  //     /* Any eslint plugin configuration options: https://github.com/webpack-contrib/eslint-webpack-plugin#options. */
-  //   },
-  //   pluginOptions: (eslintOptions, { env, paths }) => {
-  //     return eslintOptions
-  //   },
-  // },
+  eslint: {
+    enable: true /* (default value) */,
+    mode: 'extends' /* (default value) */ || 'file',
+    configure: {
+      /* Any eslint configuration options: https://eslint.org/docs/user-guide/configuring */
+    },
+    configure: (eslintConfig, { env, paths }) => {
+      return eslintConfig
+    },
+    pluginOptions: {
+      /* Any eslint plugin configuration options: https://github.com/webpack-contrib/eslint-webpack-plugin#options. */
+    },
+    pluginOptions: (eslintOptions, { env, paths }) => {
+      return eslintOptions
+    },
+  },
   babel: {
     presets: [],
     plugins: [],
@@ -71,9 +71,9 @@ module.exports = {
       return babelLoaderOptions
     },
   },
-  // typescript: {
-  //   enableTypeChecking: true /* (default value)  */,
-  // },
+  typescript: {
+    enableTypeChecking: true /* (default value)  */,
+  },
   webpack: {
     alias: {
       // 这里尝试过只能用英文代替，不能用特殊符号，不然eslint会报错

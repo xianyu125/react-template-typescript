@@ -7,7 +7,7 @@
   },
   "stylelint.enable": true,
   "stylelint.validate": ["css", "less", "scss", "postcss", "sass"],
-  "eslint.validate": ["javascript", "javascriptreact", "vue", "typescript", "typescriptreact"],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true

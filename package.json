@@ -24,7 +24,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx src --fix",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "lint:stylelint": "stylelint src/**/*.{scss,css} --fix",
     "prepare": "husky install",
     "commit": "git-cz"
@@ -75,12 +75,16 @@
     "stylelint-scss": "^4.3.0",
     "typescript": "^4.8.4"
   },
+  "engines": {
+    "node":">=16",
+    "pnpm":">=8"
+  },
   "lint-staged": {
     "src/*.{js,ts,tsx}": [
-      "npm run lint"
+      "pnpm run lint"
     ],
     "src/*.{scss,css,less}": [
-      "npm run lint:stylelint"
+      "pnpm run lint:stylelint"
     ]
   }
 }

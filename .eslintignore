@@ -1,6 +1,7 @@
 .eslintrc.cjs
 .stylelint.json
 craco.config.js
+build/*
 package.json
 commitlint.config.js
 README.md
